@@ -10,7 +10,7 @@
             var link = document.createElement( 'link' );
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../../../css/print/pdf.css' : '../../../css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
     </head>
@@ -18,11 +18,11 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    (activate_grasping baxterR /toolbox/handle)
+                    Robot with right arm grasps the toolbox handle .
                     <img src="./images/keyframe0.jpg"/>
                 </section>
                 <section>
-                    (activate_handing baxterR /toolbox/handle handR)
+                    Robot with right arm hands over the toolbox handle to Human with right arm .
                     <img src="./images/keyframe1.jpg"/>
                 </section>
             </div>
